@@ -1,0 +1,30 @@
+name:                change-travis-stuff
+version:             0.1.0.0
+synopsis:            Change my Travis stuff
+description:         Please see README.md
+homepage:            http://github.com/FranklinChen/change-travis-stuff
+license:             BSD3
+license-file:        LICENSE
+author:              Franklin Chen
+maintainer:          franklinchen@franklinchen.com
+copyright:           2015
+category:            test
+build-type:          Simple
+cabal-version:       >=1.10
+tested-with:         GHC == 7.10.2
+
+executable change-travis-stuff
+  ghc-options:         -Wall -O2
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , pathwalk
+                     , filepath
+                     , unordered-containers
+                     , bytestring
+                     , pcre-light
+
+source-repository head
+  type:                 git
+  location:             https://github.com/FranklinChen/change-travis-stuff
